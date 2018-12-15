@@ -42,7 +42,7 @@ public class PythonSocketActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //连接远程服务器
-                TcpClient.startClient("172.27.23.1", 8899);
+                SocketClient.startClient("172.27.23.1", 8899);
             }
         });
 
@@ -55,7 +55,7 @@ public class PythonSocketActivity extends AppCompatActivity {
                     return;
                 }
 
-                TcpClient.sendTcpMessage(content);
+                SocketClient.sendTcpMessage(content);
                 addToHistory("发送>>>："+content);
                 et_content.setText("");
             }

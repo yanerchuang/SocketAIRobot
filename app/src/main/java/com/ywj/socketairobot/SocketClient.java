@@ -9,7 +9,7 @@ import java.io.InputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class TcpClient {
+public class SocketClient {
 
     public static Socket socket;
 

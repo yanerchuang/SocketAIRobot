@@ -53,7 +53,7 @@ public class SocketActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //开启服务器
-                TcpServer.startServer();
+                SocketServer.startServer();
             }
         });
 
@@ -61,7 +61,7 @@ public class SocketActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //连接服务器
-                TcpClient.startClient(getIPAddress(getApplicationContext()), 8080);
+                SocketClient.startClient(getIPAddress(getApplicationContext()), 8080);
             }
         });
 
@@ -69,7 +69,7 @@ public class SocketActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //发送数据给服务器
-                TcpClient.sendTcpMessage("321");
+                SocketClient.sendTcpMessage("321");
             }
         });
 
@@ -77,7 +77,7 @@ public class SocketActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //发送数据给客户端
-                TcpServer.sendTcpMessage("321");
+                SocketServer.sendTcpMessage("321");
             }
         });
 
